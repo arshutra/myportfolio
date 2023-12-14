@@ -794,6 +794,10 @@ footer {
 /* 640 */
 
 @media screen and (max-width:640px) {
+    #about{
+        margin-top: 20vh;
+    }
+    
     .show div {
         width: 500px;
     }
@@ -825,6 +829,10 @@ footer {
 }
 
 @media screen and (max-width:530px) {
+    .side-show-img {
+         top: 0px;
+        left: -80px;
+    }
     .show div {
         width: 400px;
     }
