@@ -1,0 +1,409 @@
+<!-- 31/10/23 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arshiya Tabassum</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+<script src="https://kit.fontawesome.com/d940d584d4.js" crossorigin="anonymous"></script>
+<link rel="shortcut icon" href="Group 22.svg" type="image/x-icon">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/ScrollToPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/TextPlugin.min.js"></script>
+<script src="app.js"></script>
+
+<body>
+    <div class="container">
+
+        <!-- cursor -->
+        <div class="cursor"></div>
+        <div class="cursor2"></div>
+
+        <!-- audio -->
+
+
+        <audio id="audio" src="psx-press-button-sound-effects-download-sound_4Jy2oyil.mp3" preload="auto"></audio>
+
+
+        <!-- navbar -->
+
+        <div id="back-to-top"></div>
+        <div class="navbar">
+            <div>
+                <img src="Group 22.svg" alt="image" id="logo" width="40px">
+            </div>
+            <div>
+                <ol>
+                    <li onclick="home()" onmouseenter="play()">Home</li>
+                    <li onclick="about()" onmouseenter="play()">About</li>
+                    <li onclick="skills()" onmouseenter="play()">Skills</li>
+                    <li onclick="showcase()" onmouseenter="play()">Portfolio</li>
+                    <li onclick="contact()" onmouseenter="play()">Contact</li>
+                </ol>
+            </div>
+        </div>
+
+
+        <!-- mobile navbar -->
+
+        <div id="ham-icon" onclick="openmenu()" onmouseenter="play()"><i class="fa-solid fa-bars-staggered"></i></div>
+
+        <div id="mobile-nav">
+            <i class="fa-solid fa-x" id="close-btn" onclick="closemenu()"></i>
+            <div>
+                <img src="Group 22.svg" alt="" width="50px">
+            </div>
+            <div>
+                <ol>
+                    <li onclick="home()">Home</li>
+                    <hr>
+                    <li onclick="about()">About</li>
+                    <hr>
+                    <li onclick="skills()">Skills</li>
+                    <hr>
+                    <li onclick="showcase()">Portfolio</li>
+                    <hr>
+                    <li onclick="contact()">Contact</li>
+                    <hr>
+                    <button onclick="hire()">Hire Me</button>
+                </ol>
+            </div>
+        </div>
+
+
+
+
+
+
+        <!-- homepage -->
+
+        <div id="home">
+            <div class="left-home-container">
+                <H4>Hello There !</H4>
+                <h3 id="myname"></h3>
+                <h1>Frontend & WordPress Developer</h1>
+                <p>I like building new things and creating impressive designs and develop them into code. I've worked on
+                    many projects as a developer using most recent technologies</p>
+                <div>
+                    <button id="cv" onclick="play()"><a
+                            href="https://drive.google.com/file/d/1YC1gU0pwuSERhLP9NaQ1swZGT1vtshiD/view?usp=sharing"
+                            target="_blank">Download CV</a></button>
+                    <button id="hire" onclick="hire()">Hire Me</button>
+                </div>
+                <div class="social-icons">
+                    <a href="https://github.com/arshutra" target="_blank"><i class="fa-brands fa-github"
+                            style="background-color: #293542;" onmouseenter="play()"></i></a>
+                    <a href="https://www.linkedin.com/in/arshiya-tabassum-814a88212/" target="_blank"><i
+                            class="fa-brands fa-linkedin-in" onmouseenter="play()"></i></a>
+                    <a href="https://www.instagram.com/_codewidme_/" target="_blank"><i class="fa-brands fa-instagram"
+                            onmouseenter="play()"></i></a>
+                    <a href="https://twitter.com/codewitharshi" target="_blank"><i class="fa-brands fa-x-twitter"
+                            onmouseenter="play()"></i></a>
+                </div>
+            </div>
+            <div class="right-home-container">
+                <img src="bgimg-removebg-preview.png" alt="img">
+            </div>
+        </div>
+
+        <!-- about -->
+
+        <div id="about">
+            <div class="left-about-container">
+                <img src="wepik-export-202312131011086Zkf.png" alt="img" height="550px">
+            </div>
+            <div class="right-about-container">
+                <h1>About Me</h1>
+                <p>✨ I am a dedicated Frontend and WordPress Developer with a keen eye for detail and a flair for
+                    innovative UI/UX design. Armed with a solid technical background, I bring creativity and
+                    functionality together to deliver engaging and seamless user experiences. My proficiency in HTML,
+                    CSS, and JavaScript is complemented by a passion for staying abreast of the latest industry trends.
+                    With a commitment to clean and responsive design, I thrive on transforming ideas into visually
+                    stunning and user-friendly websites. Explore my portfolio to witness the fusion of code and
+                    creativity that defines my approach to web development.</p>
+                <hr>
+                <div class="communication-icons">
+                    <i class="fa-solid fa-location-dot"></i><a href="#"> Bangalore, India </a><br>
+                    <i class="fa-solid fa-envelope" style="margin-top: 20px;"></i><a
+                        href="mailto:arshihussainn@gmail.com">arshihussainn@gmail.com</a><br>
+                    <i class="fa-solid fa-phone" style="margin-top: 20px;"></i><a href="tel:+91 9112316905 ">+91
+                        9112316905 </a><br>
+                    <button onclick="hire()">Hire Me</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- skills -->
+
+        <div id="skills">
+            <h1 class="h1">Skills</h1>
+            <img src="wepik-export-20231211173024tlSq.png" alt="" height="220px" class="side-img-left">
+        </div>
+        <div class="myskils">
+            <div class="icon" onmouseenter="play()">
+                <div class="tooltip">HTML</div>
+                <span><i class="fa-brands fa-html5" style="color: #fd5f2b;"></i></span>
+            </div>
+            <div class="icon" onmouseenter="play()">
+                <div class="tooltip">CSS</div>
+                <span><i class="fa-brands fa-css3-alt" style="color: #1698ea;"></i></span>
+            </div>
+            <div class="icon" onmouseenter="play()">
+                <div class="tooltip">JavaScript</div>
+                <span><i class="fa-brands fa-square-js" style="color: #eee71b;"></i></span>
+            </div>
+            <div class="icon" onmouseenter="play()">
+                <div class="tooltip">WordPress</div>
+                <span><i class="fa-brands fa-wordpress" style="color: #1e8de8;"></i></span>
+            </div>
+            <div class="icon" onmouseenter="play()">
+                <div class="tooltip">GSAP</div>
+                <span><img src="gsap.png" alt="" height="40px"></span>
+            </div>
+            <div class="icon" onmouseenter="play()">
+                <div class="tooltip">Github</div>
+                <span><i class="fa-brands fa-github"></i></span>
+            </div>
+            <div class="icon" onmouseenter="play()">
+                <div class="tooltip">UI/UX</div>
+                <span><i class="fa-solid fa-pen-ruler" style="color: #e191dd;"></i></span>
+            </div>
+            <div class="icon" onmouseenter="play()">
+                <div class="tooltip">Responsive Design</div>
+                <span><i class="fa-solid fa-mobile-screen" style="color: #d67b95;"></i></span>
+            </div>
+            <div class="icon" onmouseenter="play()">
+                <div class="tooltip">Canva</div>
+                <span><img src="Canva-logo-png-circle-full-colour-white-font.png" height="40px"></span>
+            </div>
+            <div class="icon" onmouseenter="play()">
+                <div class="tooltip">Figma</div>
+                <span><i class="fa-brands fa-figma" style="color: #c40eb4;"></i></span>
+            </div>
+            <img src="wepik-export-20231211172709buZo.png" alt="" height="220px" class="side-img-right">
+        </div>
+
+
+        <!-- showcase -->
+
+
+        <div id="showcase">
+            <h1 class="h1">Show Case</h1>
+            <img src="wepik-export-20231213094402Ol9j.png" alt="" height="250px" class="side-show-img">
+            <div class="show">
+                <div>
+                    <img src="coin.png" alt="">
+                    <h1>Cryptocurrency Website</h1>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>UI/UX</li>
+                        <li>Figma</li>
+                    </ul>
+                    <p>I designed and developed a captivating Cryptocurrency website as a personal side project,
+                        offering a demonstration of my web development skills. it serves as a testament to my
+                        proficiency in creating engaging online experiences.</p>
+                    <a href="https://arshutra.github.io/coincryptozen/" target="_blank"><i
+                            class="fa-solid fa-right-from-bracket"></i></a>
+                </div>
+                <div>
+                    <img src="agency.png" alt="">
+                    <h1>Digital Agency Website</h1>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>UI/UX</li>
+                        <li>Figma</li>
+                    </ul>
+                    <p>Designed and developed a dynamic digital company website, seamlessly blending innovative design
+                        with cutting-edge functionality to create a captivating online presence that enhances user
+                        experience and promotes brand engagement.</p>
+                    <a href="https://arshutra.github.io/digitalagency/" target="_blank"><i
+                            class="fa-solid fa-right-from-bracket"></i></a>
+                </div>
+                <div>
+                    <img src="personalportfolio.png" alt="">
+                    <h1>Personal Portfolio Website</h1>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>UI/UX</li>
+                        <li>Figma</li>
+                    </ul>
+                    <p>Crafted a dynamic and visually engaging personal portfolio website that reflects my passion for
+                        creativity and showcases my diverse skills. Seamlessly blending design and functionality, it's a
+                        digital testament to my commitment to innovation.</p>
+                    <a href="https://arshutra.github.io/arshi/" target="_blank"><i
+                            class="fa-solid fa-right-from-bracket"></i></a>
+                </div>
+            </div>
+            <a href="http://127.0.0.1:5500/showcase.html" target="_blank" id="seemore-btn">See More</a>
+        </div>
+
+
+        <!-- contact -->
+
+
+        <div id="contact">
+            <h1 class="h1">Contact Me</h1>
+        </div>
+        <div class="contact-form">
+            <div class="left-contact">
+                <img src="wepik-export-20231213165559MqUY.png" alt="" height="500px" class="contact-img">
+            </div>
+            <div class="right-contact">
+                <form action="https://formspree.io/f/mnqkeova" method="POST">
+                    <h1>Get In Touch</h1>
+                    <input type="text" name="name" id="name" placeholder="Name..." required>
+                    <input type="email" name="email" id="email" placeholder="Email..." required>
+                    <textarea name="txet" id="text" cols="52" rows="6" placeholder="Text here...."></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- footer -->
+
+        <footer>
+            <div class="left-footer">
+                <p>I like building new things and creating impressive designs and develop them into code. I worked on
+                    many projects as a developer using Most Recent Technologies</p>
+                <div class="nav-icons">
+                    <a href="https://github.com/arshutra" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/arshiya-tabassum-814a88212/" target="_blank"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/_codewidme_/" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com/codewitharshi" target="_blank"><i
+                            class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-nav">
+                <ol>
+                    <li onclick="home()">Home</li>
+                    <li onclick="about()">About</li>
+                    <li onclick="skills()">Skills</li>
+                    <li onclick="showcase()">Portfolio</li>
+                    <li onclick="contact()">Contact</li>
+                </ol>
+            </div>
+        </footer>
+
+        <div class="footer-after">
+            <hr>
+            <p>&copy <span>Arshiya Tabassum</span> All rights reserved </p>
+            <hr>
+        </div>
+
+        <!-- to top -->
+
+        <div class="to-top" onclick="topto()"><i class="fa-solid fa-chevron-up"></i></div>
+    </div>
+
+    <script>
+
+
+        // cursore
+        var cursor = document.querySelector('.cursor');
+        var cursorinner = document.querySelector('.cursor2');
+        var a = document.querySelectorAll('a');
+
+        document.addEventListener('mousemove', function (e) {
+            var x = e.clientX;
+            var y = e.clientY;
+            cursor.style.transform = `translate3d(calc(${e.clientX}px - 50%), calc(${e.clientY}px - 50%), 0)`
+        });
+
+        document.addEventListener('mousemove', function (e) {
+            var x = e.clientX;
+            var y = e.clientY;
+            cursorinner.style.left = x + 'px';
+            cursorinner.style.top = y + 'px';
+        });
+
+        document.addEventListener('mousedown', function () {
+            cursor.classList.add('click');
+            cursorinner.classList.add('cursorinnerhover')
+        });
+
+        document.addEventListener('mouseup', function () {
+            cursor.classList.remove('click')
+            cursorinner.classList.remove('cursorinnerhover')
+        });
+
+        a.forEach(item => {
+            item.addEventListener('mouseover', () => {
+                cursor.classList.add('hover');
+            });
+            item.addEventListener('mouseleave', () => {
+                cursor.classList.remove('hover');
+            });
+        })
+        gsap.to("#myname", {
+            duration: 4,
+            text: "I'm Arshiya Tabassum",
+            ease: "power3",
+        });
+
+        // scroll to
+
+        function hire() {
+            gsap.to(window, {
+                duration: 2,
+                scrollTo: "#contact"
+            });
+        }
+        function home() {
+            gsap.to(window, {
+                duration: 2,
+                scrollTo: "#back-to-top"
+            });
+        }
+        function about() {
+            gsap.to(window, {
+                duration: 2,
+                scrollTo: "#about"
+            });
+        }
+        function skills() {
+            gsap.to(window, {
+                duration: 2,
+                scrollTo: "#skills"
+            });
+        }
+        function showcase() {
+            gsap.to(window, {
+                duration: 2,
+                scrollTo: "#showcase"
+            });
+        }
+        function contact() {
+            gsap.to(window, {
+                duration: 2,
+                scrollTo: "#contact"
+            });
+        }
+
+
+        function topto() {
+            gsap.to(window, {
+                duration: 2,
+                scrollTo: "#back-to-top"
+            });
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>
