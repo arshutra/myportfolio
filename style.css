@@ -840,6 +840,18 @@ footer {
 }
 
 @media screen and (max-width:450px) {
+    .right-home-container {
+    animation: fly alternate infinite 3s;
+}
+
+@keyframes fly {
+    0% {
+        transform: translateY(30px);
+    }
+
+    100% {
+        transform: translateY(30px);
+    }
     .to-top{
         top: 85vh;
     }
