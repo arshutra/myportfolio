@@ -857,6 +857,11 @@ footer {
         width: 300px;
     }
 
+    .show div:hover img {
+        width: 200px;
+    
+    }
+
     .show div ul {
         gap: 12px;
         font-size: 10px;
