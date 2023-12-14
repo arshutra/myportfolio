@@ -794,10 +794,11 @@ footer {
 /* 640 */
 
 @media screen and (max-width:640px) {
-    #about{
+
+    #about {
         margin-top: 20vh;
     }
-    
+
     .show div {
         width: 500px;
     }
@@ -829,40 +830,52 @@ footer {
 }
 
 @media screen and (max-width:530px) {
+
     .side-show-img {
-         top: 0px;
+        top: 0px;
         left: -80px;
     }
+
     .show div {
         width: 400px;
     }
 
+
+
 }
 
 @media screen and (max-width:450px) {
-    .right-home-container {
-    animation: fly alternate infinite 3s;
-}
 
-@keyframes fly {
-    0% {
-        transform: translateY(30px);
-    }
-
-    100% {
-        transform: translateY(30px);
-    }
-    .to-top{
+    .to-top {
         top: 85vh;
     }
-    
 
-    #home h4 {
-        font-size: 16px;
+    #home img {
+        width: 400px;
+    }
+
+    .left-about-container img {
+        height: 400px;
+    }
+
+
+    @keyframes fly {
+        0% {
+            transform: translateY(30px);
+        }
+
+        100% {
+            transform: translateY(80px);
+        }
+    }
+
+    .left-home-container h4 {
+        font-size: 15px;
+        padding: 4px 3px;
     }
 
     #home h3 {
-        font-size: 40px;
+        font-size: 35px;
     }
 
     #home h1 {
@@ -870,20 +883,21 @@ footer {
     }
 
     #home p {
-        font-size: 16px;
+        font-size: 14px;
+    }
+
+    #cv {
+        margin: 5px;
+        padding: 10px 15px;
+        font-size: 13px;
     }
 
     .right-about-container {
-        width: 350px;
+        width: 330px;
     }
 
     .show div {
         width: 300px;
-    }
-
-    .show div:hover img {
-        width: 200px;
-    
     }
 
     .show div ul {
@@ -892,13 +906,20 @@ footer {
 
     }
 
+
+    .show div:hover img {
+        width: 200px;
+
+    }
+
     .right-about-container h1 {
         font-size: 40px;
     }
 
     .right-about-container p {
-        font-size: 18px;
+        font-size: 16px;
     }
+
 
     .h1 {
         font-size: 45px;
@@ -918,6 +939,10 @@ footer {
         display: none;
     }
 
+    .footer-nav ol {
+        gap: 10px;
+    }
+
     .footer-nav ol li {
         font-size: 16px;
     }
@@ -926,11 +951,6 @@ footer {
 
 
 @media screen and (max-width:330px) {
-    
-    .footer-nav ol {
-    gap: 20px;
-   
-}
 
     #home h4 {
         font-size: 15px;
@@ -951,9 +971,6 @@ footer {
     .right-about-container {
         width: 300px;
     }
-    .right-about-container p {
-        font-size: 14px;
-    }
 
     .communication-icons {
         margin: 10px;
@@ -962,6 +979,7 @@ footer {
     .show div {
         width: 200px;
     }
+
 
     .show div h1 {
         font-size: 28px;
@@ -992,7 +1010,9 @@ footer {
         width: 250px;
     }
 
-    
+    .right-about-container p {
+        font-size: 15px;
+    }
 
     .communication-icons {
         margin-top: 10px;
