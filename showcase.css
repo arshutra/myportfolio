@@ -426,6 +426,10 @@ footer {
         font-size: 10px;
 
     }
+    .show div:hover img {
+        width: 200px;
+    
+    }
 
     .h1 {
         font-size: 45px;
