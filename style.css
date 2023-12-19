@@ -951,6 +951,10 @@ footer {
     .show div {
         width: 600px;
     }
+     .experence ul li{
+        width: 90%;
+    }
+
 
     .footer-after hr {
         width: 200px;
@@ -1071,6 +1075,7 @@ footer {
         width: 350px;
     }
 
+
     .show div {
         width: 300px;
     }
@@ -1084,7 +1089,17 @@ footer {
 
     .show div:hover img {
         width: 200px;
+    }
 
+     .show div h1 {
+        font-size: 22px;
+    }
+     .show div ul li {
+        font-size: 18px;
+    }
+
+    .show div p {
+        font-size: 16px;
     }
 
     .right-about-container h1 {
@@ -1095,10 +1110,13 @@ footer {
         font-size: 16px;
     }
 
+    .communication-icons a{
+        font-size:15px;
+    }
+
 
     .h1 {
         font-size: 45px;
-
     }
 
     .contact-form {
