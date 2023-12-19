@@ -1175,10 +1175,6 @@ footer {
     }
 
 
-    .show div h1 {
-        font-size: 28px;
-    }
-
     .show div ul {
         flex-wrap: wrap;
     }
