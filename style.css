@@ -978,6 +978,10 @@ footer {
         width: 480px;
     }
 
+     .experence {
+        width: 100%;
+    }
+
     input {
         width: 300px;
         height: 35px;
