@@ -43,6 +43,7 @@
                     <li onclick="about()" onmouseenter="play()">About</li>
                     <li onclick="skills()" onmouseenter="play()">Skills</li>
                     <li onclick="showcase()" onmouseenter="play()">Portfolio</li>
+                    <li onclick="roadmap()" onmouseenter="play()">Experience</li>
                     <li onclick="contact()" onmouseenter="play()">Contact</li>
                 </ol>
             </div>
@@ -67,6 +68,8 @@
                     <li onclick="skills()">Skills</li>
                     <hr>
                     <li onclick="showcase()">Portfolio</li>
+                    <hr>
+                    <li onclick="roadmap()">Experience</li>
                     <hr>
                     <li onclick="contact()">Contact</li>
                     <hr>
@@ -247,6 +250,95 @@
             <a href="https://arshutra.github.io/showcase/" target="_blank" id="seemore-btn">See More</a>
         </div>
 
+        
+        <!-- experience -->
+
+
+        <div class="main" id="roadmap">
+            <h1 class="h1">Experience</h1>
+
+            <div class="experence">
+                <ul>
+                    <li>
+                        <h3 class="title">Frontend Developer and Designer at Flonix, Scotland</h3>
+                        <h6>October 2023-Present</h6>
+
+                        <p>&deg; Rewrote HTML to meet industry and company standards for SEO and Accessibility.
+                            This drove a 600% increase in users by appearing on the first page of Google search
+                            results. <br>
+                            &deg; Utilized HTML, CSS, and JavaScript to create 100+ responsive landing pages for both
+                            company and client.
+                        </p>
+
+                        <span class="circle"></span>
+                    </li>
+
+                    <li>
+                        <h3 class="title">UI/UX Designer at Adler Penumatics, India</h3>
+                        <h6>January 2022-September 2022</h6>
+                        <p>
+                            &deg;Used HTML and CSS to create a mock, highlighting custom graphics for a
+                            product. <br>
+                            &deg; Revamped company logo and business cards, boosting brand image.
+                        </p>
+
+                        <span class="circle"></span>
+                    </li>
+
+                    <li>
+                        <h3 class="title">Web Developer and UI/UX Designer at UMC, Detroit</h3>
+                        <h6>July 2021-December 2021</h6>
+                        <p>
+                            &deg; Helped to achieve a consistent look and visual theme across the website by
+                            promoting uniform fonts, formatting, images, and layout. <br>
+                            &deg; Coordinated mailings, marketing materials, and website content.
+                        </p>
+
+                        <span class="circle"></span>
+                    </li>
+
+
+                    <li>
+                        <h3 class="title">Web Developement for a blogger, United States</h3>
+                        <h6>May 2021-June 2021</h6>
+                        <p>
+                            &deg; Coordinated mailings, marketing materials, and website content. <br>
+                            &deg; Created and oversaw wireframe designs from client requests.
+                           
+                        </p>
+
+                        <span class="circle"></span>
+                    </li>
+
+                    <li>
+                        <h3 class="title">Web Developer at Enrico, Italy</h3>
+                        <h6>March 2021- April 2021</h6>
+                        <p>
+                            &deg;Developed customer-specific design framework, reducing site production
+                            time by 4 days. <br>
+                            &deg;Created and oversaw wireframe designs from client requests.
+                        </p>
+
+                        <span class="circle"></span>
+                    </li>
+
+                    <li>
+                        <h3 class="title">WordPress Developer at Axie Ninja, India</h3>
+                        <h6>January 2021- February 2021</h6>
+                        <p>
+                            &deg;Developed customer-specific design framework, reducing site production
+                            time by 4 days <br>
+                            &deg;Created and oversaw wireframe designs from client requests.
+                        </p>
+
+                        <span class="circle"></span>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+
 
         <!-- contact -->
 
@@ -291,6 +383,7 @@
                     <li onclick="about()">About</li>
                     <li onclick="skills()">Skills</li>
                     <li onclick="showcase()">Portfolio</li>
+                    <li onclick="roadmap()">Experience</li>
                     <li onclick="contact()">Contact</li>
                 </ol>
             </div>
@@ -382,6 +475,12 @@
             gsap.to(window, {
                 duration: 2,
                 scrollTo: "#showcase"
+            });
+        }
+        function roadmap() {
+            gsap.to(window, {
+                duration: 2,
+                scrollTo: "#roadmap"
             });
         }
         function contact() {
