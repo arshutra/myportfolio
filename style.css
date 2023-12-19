@@ -912,6 +912,7 @@ footer {
 .to-top {
     position: fixed;
     color: #ff5bc0;
+    z-index:444;
     top: 90vh;
     padding: 15px;
     border-radius: 50%;
